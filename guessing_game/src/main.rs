@@ -3,9 +3,13 @@ use rand::thread_rng;
 use std::cmp::Ordering;
 use std::io;
 use std::ops::RangeInclusive;
+use colored::*;
 
 //The kind of range expression we’re using here takes the form start..=end and is inclusive on the lower and upper bounds, so we need to specify 1..=100 to request a number between 1 and 100.
-const RANGE: RangeInclusive<u32> = 1..=50;
+const MIN_RANGE: u32 = 1; 
+const MAX_RANGE: u32 = 55; 
+const RANGE: RangeInclusive<u32> = MIN_RANGE..=MAX_RANGE;
+
 
 fn main() {
     println!("Guess the number!");
@@ -14,7 +18,7 @@ fn main() {
     let mut counter: u32 = 0;
 
     loop {
-        println!("Please input your guess.");
+        println!("Please input your guess. It must be between {MIN_RANGE} - {MAX_RANGE}");
 
         // Mutable varriable (Can be)
         let mut guess = String::new();
@@ -40,7 +44,7 @@ fn main() {
             Ordering::Less => println!("Too small!"),
             Ordering::Greater => println!("Too big!"),
             Ordering::Equal => {
-                println!("You win! You took {counter} attempts");
+                println!("{} You took {counter} attempts !","You win!".green());
                 break;
             }
         }

@@ -129,6 +129,20 @@ https://doc.rust-lang.org/reference/const_eval.html
 
 Constants are valid for the entire time a program runs, within the scope in which they were declared. This property makes constants useful for values in your application domain that multiple parts of the program might need to know about, such as the maximum number of points any player of a game is allowed to earn, or the speed of light.
 
+### Shadowing
+Declaring a new variable with the same name as a previous variable. Rustaceans say that the first variable is shadowed by the second, which means that the second variable is what the compiler will see when you use the name of the variable.
+
+```rust
+    let x = 5;
+
+    let x = x + 1; // This shadowed the first var
+```
+
+Shadowing is different from marking a variable as `mut` **because we’ll get a compile-time error if we accidentally try to reassign to this variable without using the let keyword**. By using `let`, we can perform a few transformations on a value but have the variable be `immutable` after those transformations have been completed.
+
+The other difference between `mut` and `shadowing` is that because we’re effectively **creating a new variable when we use the let keyword again**, *we can change the type of the value but reuse the same name*. For example, say our program asks a user to show how many spaces they want between some text by inputting space characters, and then we want to store that input as a number:
+
+
 ### Receiving user input
 ```rust
     io::stdin()
@@ -138,7 +152,7 @@ If we hadn’t imported the io library with use std::io; at the beginning of the
 
 Next, the line `.read_line(&mut guess)` calls the `read_line` method on the standard input handle to get input from the user. We’re also passing `&mut guess` as the argument to `read_line` to tell it what **string to store the user input in**. The full job of `read_line` is to take whatever the user types into standard input and append that into a string (without overwriting its contents), so we therefore pass that string as an argument. **The string argument needs to be mutable so the method can change the string’s content.**
 
-#### Paremeter passed as reference
+### Paremeter passed as reference
 
 The `&` indicates that this argument is a **reference**, which gives you a way to let multiple parts of your code access one piece of data without needing to copy that data into memory multiple times. 
 
