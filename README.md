@@ -22,6 +22,8 @@ https://doc.rust-lang.org/book
 * `Expressions` do not include ending semicolons (x + 1)
 * `Expressions` are the same as an `return` in PHP
 * In functions, we don’t name return values, but we must declare their type after an arrow 
+* `Loops` can have `loop labels` to specify what the loop is doing if multidementional
+* ~~`Foreach`~~ loops do not exist. Instead you should use for loops with using a `range` package.
 
 ## Debugging
 * VS code has rust analyzer extension available which checks code on the fly prior to being compiled to avoid wasting time. https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer
