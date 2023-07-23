@@ -15,7 +15,13 @@ https://doc.rust-lang.org/book
 * By default, Rust has a set of items defined in the standard library that it brings into the scope of every program. **This set is called the `prelude`**
     * https://doc.rust-lang.org/std/prelude/index.html
 * Constants must be capitalized
-* If using 
+* Rust uses `Snake Case` as the conventional style for function naming (lowercase and underscores separate words)
+* function parameters ***must*** declare the data type
+* Rust ***does not use*** `inheritance`, instead it uses `traits`
+* Rust is an **expression-based** language
+* `Expressions` do not include ending semicolons (x + 1)
+* `Expressions` are the same as an `return` in PHP
+* In functions, we don’t name return values, but we must declare their type after an arrow 
 
 ## Debugging
 * VS code has rust analyzer extension available which checks code on the fly prior to being compiled to avoid wasting time. https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer
