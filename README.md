@@ -70,6 +70,11 @@ cargo check
 cargo add <prelude package name>
 ```
 
+#### Linting Code in Rust
+```
+cargo clippy --fix
+```
+
 ### What is a *Toml* file?
 #### Definition: Tom’s Obvious, Minimal Language
 URL: https://toml.io/en/
