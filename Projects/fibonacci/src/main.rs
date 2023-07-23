@@ -23,7 +23,7 @@ fn fibonacci(n: u32) -> u32 {
     
     for _number in 0..=n {
         let prev: u32 = total;
-        total = total + n2;
+        total += n2;
         n2 = prev;
     }
     
