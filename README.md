@@ -24,6 +24,11 @@ https://doc.rust-lang.org/book
 * In functions, we don’t name return values, but we must declare their type after an arrow 
 * `Loops` can have `loop labels` to specify what the loop is doing if multidementional
 * ~~`Foreach`~~ loops do not exist. Instead you should use for loops with using a `range` package.
+* Rust Memory is managed through a system of ownership with a set of rules that the compiler checks. If any of the rules are violated, the program won’t compile.
+* Accessing data in the `heap` is *slower* than accessing data on the `stack` because **you have to follow a pointer to get there**.
+* Local variables get pushed onto the stack. When the function is over, those values get popped off the stack.
+* When a variable goes out of scope, Rust calls a special function for us. This function is called `drop`, and it’s where the author of String can put the code to return the memory. Rust calls `drop` automatically at the closing curly bracket.
+* `integers` that have a known size at compile time are stored entirely on the stack. Therefore can be copied directly into other vars (because there’s no difference between deep and shallow copying in this use case)
 
 ## Debugging
 * VS code has rust analyzer extension available which checks code on the fly prior to being compiled to avoid wasting time. https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer

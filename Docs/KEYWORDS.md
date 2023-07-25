@@ -3,6 +3,7 @@
 Useful terminoligies when speaking in coding lingo to those who are very litteral.
 
 * **Synonymous**: having the same meaning as another word or phrase in the same language
+* **Arbitrary**: based on random choice or personal whim, rather than any reason or system.
 * **Function Expression**: Function return value/ term.
 * **Function Statement**: `instructions` that perform some action and do not return a value.
 * **Unsigned Integer**: Possitive Integer (Can only be positive)
@@ -10,3 +11,9 @@ Useful terminoligies when speaking in coding lingo to those who are very littera
 * **Integer overflow**: When an integer reaches it's max range and is overflowing in value
 * **Disambiguate**: remove uncertainty of meaning
 * **Loop Label**: Labels/keyword to explain purpose of loop
+* **Allocating on the heap**: The `memory allocator` finds an empty spot in the heap that is big enough, marks it as being in use, and returns a `pointer`, which is the address of that location.
+* **Heap Pointer**: keeps track the top of `heap` similar to the stack pointer of the stack
+* **String Litteral**: Hardcoded string value in text of application.
+* **Garbage Collector**: Keeps track of and cleans up memory that isn’t being used anymore (In other languages, NOT Rust)
+* **Shallow Copy**: stores the references of objects to the original memory address (stack) <- **This is known as a `move` in rust**
+* **Deep Copy**: Stores copy of the objects value
