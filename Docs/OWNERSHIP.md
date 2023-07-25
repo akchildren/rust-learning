@@ -119,19 +119,3 @@ This code seems to `contradict` what we just learned: we don’t have a call to 
 The reason is that types such as `integers` that have a known size at compile time are stored entirely on the stack, so copies of the actual values are *quick to make*. 
 
 That means there’s no reason we would want to prevent `x` from being valid after we create the variable `y`. In other words, *there’s no difference between deep and shallow copying here*, so calling clone wouldn’t do anything different from the usual shallow copying, and we can leave it out.
-
-#### Copy Trait
-
-Rust has a special annotation called the `Copy` trait that we can place on types that are stored on the stack, as integers are. 
-
->If a type `implements` the `Copy` trait, *variables that use it do not move*, but rather are *trivially copied*, making them still valid after assignment to another variable.
-
->Rust won’t let us annotate a type with `Copy` if the type, or any of its parts, has implemented the `Drop` trait. 
-
-Here are some of the types that implement Copy:
-
-- All the integer types, such as u32.
-- The Boolean type, bool, with values true and false.
-- All the floating-point types, such as f64.
-- The character type, char.
-- Tuples, if they only contain types that also implement Copy. For example, (i32, i32) implements Copy, but (i32, String) does not.
