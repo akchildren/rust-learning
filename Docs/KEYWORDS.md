@@ -17,3 +17,5 @@ Useful terminoligies when speaking in coding lingo to those who are very littera
 * **Garbage Collector**: Keeps track of and cleans up memory that isn’t being used anymore (In other languages, NOT Rust)
 * **Shallow Copy**: stores the references of objects to the original memory address (stack) <- **This is known as a `move` in rust**
 * **Deep Copy**: Stores copy of the objects value
+* **Data Race**: Data races are a common problem in multithreaded programming. Data races occur when multiple tasks or threads access a shared resource without sufficient protections, leading to undefined or unpredictable behavior.
+* **Dangling pointer**: a pointer that references a location in memory that may have been given to someone else—by freeing some memory while preserving a pointer to that memory.
