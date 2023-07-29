@@ -22,3 +22,5 @@ Useful terminoligies when speaking in coding lingo to those who are very littera
 * **Struct**: A `struct`, or `structure`, is a custom data type that lets you **package** together and name multiple related values that make up a meaningful group. 
 * **tuple structs**: `Structs` that have no field names and take a tuple of values
 * **unit-like structs**: `Structs` with no fields or value
+* **Implementation Block `Impl`**: The `impl` keyword is primarily used to define implementations on types. Inherent implementations are standalone, while trait implementations are used to implement traits for types, or other traits.
+* **Associated functions**: Methods definied within a `impl` because they’re associated with the type named after the `impl`.
