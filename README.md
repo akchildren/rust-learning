@@ -30,6 +30,8 @@ https://doc.rust-lang.org/book
 * When a variable goes out of scope, Rust calls a special function for us. This function is called `drop`, and it’s where the author of String can put the code to return the memory. Rust calls `drop` automatically at the closing curly bracket.
 * `integers` that have a known size at compile time are stored entirely on the stack. Therefore can be copied directly into other vars (because there’s no difference between deep and shallow copying in this use case)
 * Slicing a string is easy, we can use `&my_string[0..6]` which grabs chars from positions 0 to 6
+* Placing ```#[derive(Debug)]``` at the top of a rust file will enable debugging.
+* `dbg!(&var);` the rust equivalant of dd in php (must has debug derived)
 
 ## Debugging
 * VS code has rust analyzer extension available which checks code on the fly prior to being compiled to avoid wasting time. https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer
