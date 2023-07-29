@@ -19,3 +19,6 @@ Useful terminoligies when speaking in coding lingo to those who are very littera
 * **Deep Copy**: Stores copy of the objects value
 * **Data Race**: Data races are a common problem in multithreaded programming. Data races occur when multiple tasks or threads access a shared resource without sufficient protections, leading to undefined or unpredictable behavior.
 * **Dangling pointer**: a pointer that references a location in memory that may have been given to someone else—by freeing some memory while preserving a pointer to that memory.
+* **Struct**: A `struct`, or `structure`, is a custom data type that lets you **package** together and name multiple related values that make up a meaningful group. 
+* **tuple structs**: `Structs` that have no field names and take a tuple of values
+* **unit-like structs**: `Structs` with no fields or value
