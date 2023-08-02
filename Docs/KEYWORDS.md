@@ -25,3 +25,5 @@ Useful terminoligies when speaking in coding lingo to those who are very littera
 * **Implementation Block `Impl`**: The `impl` keyword is primarily used to define implementations on types. Inherent implementations are standalone, while trait implementations are used to implement traits for types, or other traits.
 * **Associated functions**: Methods definied within a `impl` because they’re associated with the type named after the `impl`.
 * **Option<T>**: A enum option that is used instead of a nullable varriable. This is included in the prelude by default
+* **match**: The equivalent of a switch statement in PHP
+* **if let**: lets you combine `if` and `let` into a less verbose way to handle values that match one pattern while ignoring the rest. 
