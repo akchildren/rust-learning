@@ -33,6 +33,7 @@ https://doc.rust-lang.org/book
 * Placing ```#[derive(Debug)]``` at the top of a rust file will enable debugging.
 * `dbg!(&var);` the rust equivalant of dd in php (must has debug derived)
 * Rust **doesn’t have the null** feature that many other languages have. Null is a value that means there is no value there. In languages with null, variables can always be in one of two states: null or not-null.
+* **Matches Are Exhaustive**: We must always handle none if matching an option type
 
 ## Debugging
 * VS code has rust analyzer extension available which checks code on the fly prior to being compiled to avoid wasting time. https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer
