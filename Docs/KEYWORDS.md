@@ -27,3 +27,7 @@ Useful terminoligies when speaking in coding lingo to those who are very littera
 * **Option<T>**: A enum option that is used instead of a nullable varriable. This is included in the prelude by default
 * **match**: The equivalent of a switch statement in PHP
 * **if let**: lets you combine `if` and `let` into a less verbose way to handle values that match one pattern while ignoring the rest. 
+* **Packages**: A Cargo feature that lets you build, test, and share crates
+* **Crates**: A tree of modules that produces a library or executable
+* **Modules** and use: Let you control the organization, scope, and privacy of paths
+* **Paths**: A way of naming an item, such as a struct, function, or module
