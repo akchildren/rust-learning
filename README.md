@@ -34,6 +34,9 @@ https://doc.rust-lang.org/book
 * `dbg!(&var);` the rust equivalant of dd in php (must has debug derived)
 * Rust **doesn’t have the null** feature that many other languages have. Null is a value that means there is no value there. In languages with null, variables can always be in one of two states: null or not-null.
 * **Matches Are Exhaustive**: We must always handle none if matching an option type
+* ***Modules*** let us organize code within a crate for readability and easy reuse.
+* ***Modules*** also allow us to control the ***privacy*** of items, because code within a module is private by default.
+
 
 ## Debugging
 * VS code has rust analyzer extension available which checks code on the fly prior to being compiled to avoid wasting time. https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer
